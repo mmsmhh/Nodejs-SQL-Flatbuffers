@@ -1,4 +1,4 @@
-# Node.js-with-flatbuffers
+# Nodejs-SQL-Flatbuffers
 
 ### Stack Used in this applcation
   - NodeJS
