@@ -1,0 +1,12 @@
+// Not used at runtime
+// Use the following command to generate js code:
+// flatc -s user.fbs --gen-mutable
+
+namespace io.mahmoudsaleh.generated;
+
+table User {
+  email:string;
+  password:string;
+}
+
+root_type User;
