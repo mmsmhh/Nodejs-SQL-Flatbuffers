@@ -20,8 +20,6 @@ function onLoad() {
     if (window.location.search != null && window.location.search.substr(1).split("=")[0] == "status") {
 
         if (window.location.search.substr(1).split("=")[1] == 1) {
-            console.log(1)
-            // document.getElementById('status1').style.display = "visable";
             document.getElementById('status2').style.display = "none";
             document.getElementById('status3').style.display = "none";
             document.getElementById('status4').style.display = "none";

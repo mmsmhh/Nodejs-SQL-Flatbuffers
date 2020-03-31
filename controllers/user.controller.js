@@ -37,8 +37,6 @@ const hashPassword = async password => {
 
 const isValidPassword = async (newPassword, oldPassword) => {
     try {
-        console.log(newPassword);
-        console.log(oldPassword);
         return await bcrypt.compare(newPassword, oldPassword);
     } catch (error) {
         throw new Error(error);

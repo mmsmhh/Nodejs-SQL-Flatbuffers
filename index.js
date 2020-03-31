@@ -22,7 +22,6 @@ app.use('/', routes);
 
 app.use((err, _req, res, next) => {
   if (err.statusCode === 404) return next();
-  console.log(err)
   res.status(500).json({
     err: err.message,
     msg: '500 Internal server error.',
