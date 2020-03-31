@@ -2,7 +2,7 @@ document.getElementById('registrationForm').addEventListener('submit', userRegis
 
 const registration = (user) => {
 
-    axios.post('http://localhost:3000/user/registration', user, { headers: { "Content-Type": "text/plain" } })
+    axios.post('/user/registration', user, { headers: { "Content-Type": "text/plain" } })
         .then(response => {
             window.location.replace("/login.html?status=3");
         }).catch(error => {

@@ -1,7 +1,7 @@
 document.getElementById('loginForm').addEventListener('submit', userLogin);
 
 const login = (user) => {
-    axios.post('http://localhost:3000/user/login', user, { headers: { "Content-Type": "text/plain" } })
+    axios.post('/user/login', user, { headers: { "Content-Type": "text/plain" } })
         .then(response => {
             console.log(response);
             window.location.replace("/login.html?status=1");
